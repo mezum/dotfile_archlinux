@@ -70,3 +70,12 @@ git clone https://aur.archlinux.org/yay-bin
 cd yay-bin
 makepkg -si
 ```
+
+## mkinitcpio
+```bash
+# /etc/mkinitcpio.conf
+MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)
+# remove kms from HOOKS
+
+sudo mkinitcpio -P
+```

@@ -8,13 +8,19 @@ IFS= read -r CONTINUE
 [[ "$CONTINUE" != 'y' ]] && exit
 
 reflector --country 'Japan' --protocol 'https' --age 48 --sort rate --save /etc/pacman.d/mirrorlist
+pacman -Syy --noconfirm
 pacstrap -K /mnt \
     base \
     linux-zen \
-    linux-zen-header \
+    linux-zen-headers \
     linux-firmware \
     intel-ucode \
-    refine
+    refind \
+    git \
+    vim \
+    sudo \
+    fakeroot \
+    debugedit
 genfstab -U /mnt > /mnt/etc/fstab
 echo EDITOR=vim > /mnt/etc/environment
 echo LANG=en_US.UTF-8 > /mnt/etc/locale.conf
