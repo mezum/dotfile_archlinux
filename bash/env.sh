@@ -12,3 +12,6 @@ export MOZ_ENABLE_WAYLAND=1
 
 # cargo
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# node
+export NVM_DIR="$XDG_CONFIG_HOME/nvm"
