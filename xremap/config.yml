@@ -1,0 +1,77 @@
+shared:
+  terminals: &terminals
+    - kitty
+    - emacs
+    - vim
+    - code
+  hhkb: &hhkb
+    - PFU Limited HHKB-Hybrid
+    - HHKB-Hybrid_1 Keyboard
+    - HHKB-Hybrid_2 Keyboard
+    - HHKB-Hybrid_3 Keyboard
+    - HHKB-Hybrid_4 Keyboard
+
+modmap:
+  - device:
+      only: *hhkb
+    remap:
+      Super_L: Ctrl_L
+      Alt_L: Super_L
+      CapsLock: Alt_L
+  - device:
+      only: *hhkb
+    application:
+      not: *terminals
+    remap:
+      Ctrl_L: CapsLock
+
+
+virtual_modifiers:
+  - CapsLock
+
+keymap:
+  - name: Emacs
+    application:
+      not: *terminals
+    remap:
+      CapsLock-n: { with_mark: down }
+      CapsLock-p: { with_mark: up }
+      CapsLock-f: { with_mark: right }
+      CapsLock-b: { with_mark: left }
+      CapsLock-a: { with_mark: home }
+      CapsLock-e: { with_mark: end }
+      M-b: { with_mark: Ctrl_L-left }
+      M-f: { with_mark: Ctrl_L-right }
+      M-v: { with_mark: pageup }
+      CapsLock-v: { with_mark: pagedown }
+      M-Shift-comma: { with_mark: Ctrl_L-home }
+      M-Shift-dot: { with_mark: Ctrl_L-end }
+      CapsLock-d: [delete, { set_mark: false }]
+      CapsLock-h: [backspace, { set_mark: false }]
+      M-backspace: [Ctrl_L-backspace, { set_mark: false }]
+      CapsLock-M-space: [Ctrl_L-Shift-right, { set_mark: true }]
+      CapsLock-k: [Shift-end, Ctrl_L-x, { set_mark: false }]
+      CapsLock-w: [Ctrl_L-x, { set_mark: false }]
+      M-w: [Ctrl_L-c, { set_mark: false }]
+      CapsLock-y: [Ctrl_L-v, { set_mark: false }]
+      CapsLock-j: enter
+      CapsLock-m: enter
+      CapsLock-o: [enter, left]
+      CapsLock-slash: [Ctrl_L-z, { set_mark: false }]
+      CapsLock-space: { set_mark: true }
+      CapsLock-g: [esc, { set_mark: false }]
+      CapsLock-space: { set_mark: true }
+      CapsLock-s: Ctrl_L-f
+      CapsLock-r: Shift-F3
+      CapsLock-x:
+        remap:
+          b: [{ set_mark: false }, Ctrl_L-n]
+          h: [Ctrl_L-home, Ctrl_L-a, { set_mark: true }]
+          CapsLock-f: Ctrl_L-o
+          CapsLock-s: Ctrl_L-s
+          k: Ctrl_L-f4
+          C-c: Ctrl_L-q
+          u: [Ctrl_L-z, { set_mark: false }]
+  - name: underscore
+    remap:
+      RO: Shift-ro

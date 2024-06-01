@@ -1,0 +1,7 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Exec=$HOME/.cargo/bin/xremap $HOME/.config/xremap/config.yml
+Icon=application-x-shellscript
+Name=xremap
+Type=Application
+X-KDE-AutostartScript=true
