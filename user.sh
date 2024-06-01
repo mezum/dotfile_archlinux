@@ -2,10 +2,17 @@
 set -eu
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")"; pwd)"
 
+install() {
+    (cd "$BASEDIR/$1" && "./_${2:-}install.sh")
+}
+
+# preinstall
+install bash pre
+install electron pre
+install xremap pre
+
 # install
-(cd "$BASEDIR/bash" && ./_install.sh)
-(cd "$BASEDIR/electron" && ./_install.sh)
-(cd "$BASEDIR/xremap" && ./_install.sh)
+install pacman
 
 # postinstall
-(cd "$BASEDIR/xremap" && ./_postinstall.sh)
+install xremap post

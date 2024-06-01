@@ -3,7 +3,7 @@ set -eu
 
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")"; pwd)"
 
-source "$BASEDIR/env.sh"
+. "$BASEDIR/env.sh"
 mkdir -p \
     "$XDG_CONFIG_HOME" \
     "$XDG_DATA_HOME" \
