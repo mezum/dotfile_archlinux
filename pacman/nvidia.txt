@@ -1,0 +1,3 @@
+dkms
+nvidia-dkms
+nvidia-utils

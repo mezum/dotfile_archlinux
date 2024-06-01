@@ -1,0 +1,1 @@
+KERNEL=="uinput", GROUP=="xremap", TAG+="uaccess"
