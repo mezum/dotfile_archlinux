@@ -8,5 +8,8 @@ cat \
     im.txt \
     kde.txt \
     nvidia.txt \
-    | yay -Syyyu --noconfirm -
+    sdk.txt \
+    | yay -Syu --noconfirm -
 yay -Sc --noconfirm
+
+rustup default stable
