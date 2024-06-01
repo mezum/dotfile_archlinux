@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
 set -eu
 
-ln -sf config.yaml $HOME/.config/xremap/config.yml
+mkdir -p \
+    "$HOME/.config/xremap/" \
+    "$HOME/.config/autostart/"
+
+ln -sf config.yaml "$HOME/.config/xremap/"
+ln -sf xremap.desktop "$HOME/.config/autostart/"
