@@ -3,16 +3,12 @@ set -eu
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")"; pwd)"
 
 install() {
-    (cd "$BASEDIR/$1" && "./_${2:-}install.sh")
+    local FILENAME="_${1:-}install.sh"
+    while read -r FILE; do
+        (cd $(dirname "$FILE") && "./$FILENAME")
+    done < <(find "$BASEDIR" -mindepth 2 -maxdepth 2 -name "$FILENAME")
 }
 
-# preinstall
-install bash pre
-install electron pre
-install xremap pre
-
-# install
-install pacman
-
-# postinstall
-install xremap post
+install pre
+install
+install post

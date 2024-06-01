@@ -14,4 +14,6 @@ cat \
 yay -Sc --noconfirm
 
 git config --global credential.helper /usr/lib/git-core/git-credential-libsecret
+
 rustup default stable
+sudo debtap -u
