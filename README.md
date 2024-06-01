@@ -48,6 +48,14 @@ visudo
 gpasswd -a $USER_NAME wheel
 ```
 
+# multilib
+
+```bash
+# /etc/pacman.conf
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```
+
 # yay
 
 ```bash
