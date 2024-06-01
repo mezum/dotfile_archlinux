@@ -48,7 +48,7 @@ visudo
 gpasswd -a $USER_NAME wheel
 ```
 
-# multilib
+## multilib
 
 ```bash
 # /etc/pacman.conf
@@ -56,7 +56,7 @@ gpasswd -a $USER_NAME wheel
 Include = /etc/pacman.d/mirrorlist
 ```
 
-# yay
+## yay
 
 ```bash
 git clone https://aur.archlinux.org/yay-bin
