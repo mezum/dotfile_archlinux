@@ -3,12 +3,12 @@ set -eu
 
 cat \
     audio.txt \
-    aur-steam-deps.txt \
     core.txt \
     im.txt \
     kde.txt \
     nvidia.txt \
     sdk.txt \
+    steam-deps.txt \
     | yay -Syu --noconfirm -
 yay -Sc --noconfirm
 
