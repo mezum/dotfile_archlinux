@@ -10,6 +10,7 @@ cat \
     nvidia.txt \
     sdk.txt \
     steam-deps.txt \
+    utils.txt \
     | yay -Syu --noconfirm -
 yay -Sc --noconfirm
 
