@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -eu
 
-git submodule update -i steam-devices/
-curl -Lo steam.deb https://cdn.akamai.steamstatic.com/client/installer/steam.deb
-sudo cp -f steam-devices/*.rules /etc/udev/rules.d/
+STEAM_LAUNCHER="http://repo.steampowered.com/steam/archive/precise/steam_latest.tar.gz"
+PROTON_GE="https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton9-5/GE-Proton9-5.tar.gz"
+
+curl -Lo steam.tar.gz "$STEAM_LAUNCHER"
+curl -Lo protonge.tar.gz "$PROTON_GE"

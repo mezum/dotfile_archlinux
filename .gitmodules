@@ -1,3 +1,0 @@
-[submodule "steam/steam-devices"]
-	path = steam/steam-devices
-	url = https://github.com/ValveSoftware/steam-devices.git
