@@ -4,10 +4,17 @@ This repository contains utility scripts for Arch Linux.
 
 Run `install-arch.sh` to install Arch Linux on `/mnt`, it is usable on an installer.
 Run `system.sh` to setup new installed Arch Linux, it is usable after `arch-chroot`.
-Run `user.sh` to setup the user environment.
-Run `apps.sh` to install applications.
+Run `user.sh` to setup the user environment and applications.
 
 # Cheat sheet
+
+## format disk
+
+```bash
+mkfs.vfat -F 32 /dev/nvme1n1p1
+mkfs.ext4 /dev/nvme1n1p3
+mkswap /dev/nvme1n1p2
+```
 
 ## mount
 
