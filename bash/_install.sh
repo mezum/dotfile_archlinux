@@ -10,6 +10,5 @@ mkdir -p \
     "$XDG_STATE_HOME" \
     "$XDG_CACHE_HOME"
 
-ln -sf "$BASEDIR/env.sh" "$HOME/.bashenv"
 ln -sf "$BASEDIR/profile.sh" "$HOME/.bash_profile"
 ln -sf "$BASEDIR/rc.sh" "$HOME/.bashrc"

@@ -1,7 +1,8 @@
 # ~/.bashrc
 
 # ignore non iteractive shell
-[[ $- != *i* ]] && return
+[[ $- != *i* ]] && exit
+SRCDIR="$(cd "$(dirname "$(readlink "${BASH_SOURCE:-$0}")")"; pwd)"
 
 # coloring
 alias ls='ls --color=auto'
