@@ -1,2 +1,4 @@
 firefox
 discord
+usbutils
+

@@ -1,4 +1,5 @@
-pipewire
-pipewire-audio
-pipewire-jack
-pipewire-pulse
+pipewire-full
+pipewire-full-audio
+pipewire-full-jack
+pipewire-full-pulse
+

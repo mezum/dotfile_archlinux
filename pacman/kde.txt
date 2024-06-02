@@ -3,3 +3,5 @@ kde-graphics-meta
 kde-multimedia-meta
 kde-system-meta
 kde-utilities-meta
+noto-fonts-emoji
+

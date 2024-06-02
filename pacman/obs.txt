@@ -1,0 +1,5 @@
+obs-studio
+obs-studio-amf
+obs-vaapi
+v4l2loopback-dkms
+

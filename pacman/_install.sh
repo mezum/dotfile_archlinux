@@ -4,6 +4,7 @@ set -eu
 cat \
     audio.txt \
     core.txt \
+    fonts.txt \
     im.txt \
     kde.txt \
     keyring.txt \
