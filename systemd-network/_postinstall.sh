@@ -7,8 +7,4 @@ launch-service() {
     sudo systemctl start "$1"
 }
 
-sudo cp -f 20-wired.network /etc/systemd/network/
-
-launch-service systemd-networkd.service
-launch-service systemd-resolved.service
 launch-service dhcpcd.service
