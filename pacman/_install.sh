@@ -2,12 +2,12 @@
 set -eu
 
 cat \
-    audio.txt \
     core.txt \
     fonts.txt \
     im.txt \
     kde.txt \
     keyring.txt \
+    media.txt \
     nvidia.txt \
     obs.txt \
     sdk.txt \
