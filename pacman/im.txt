@@ -1,4 +1,4 @@
 fcitx5
 fcitx5-mozc
 fcitx5-breeze
-
+fcitx5-configtool

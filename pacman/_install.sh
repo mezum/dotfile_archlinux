@@ -9,9 +9,11 @@ cat \
     kde.txt \
     keyring.txt \
     nvidia.txt \
+    obs.txt \
     sdk.txt \
     steam-deps.txt \
     utils.txt \
+    | tr -s '\n' '\n' \
     | yay -Syu --noconfirm -
 yay -Sc --noconfirm
 

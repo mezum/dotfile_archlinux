@@ -3,4 +3,3 @@ nvm
 python
 rustup
 unityhub
-
