@@ -9,7 +9,7 @@ COMPATIBILITYTOOLS_DIR="$HOME/.local/share/Steam/compatibilitytools.d"
 
 curl -Lo steam.deb "$STEAM_LAUNCHER"
 ar x steam.deb data.tar.xz
-mkdir -p "$STEAM_INSTALL_DIR"
+sudo mkdir -p "$STEAM_INSTALL_DIR"
 sudo tar xf data.tar.xz -C "$STEAM_INSTALL_DIR"
 rm steam.deb data.tar.xz
 
