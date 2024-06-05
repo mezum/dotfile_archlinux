@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 set -eu
 
-# STEAM_LAUNCHER="http://repo.steampowered.com/steam/archive/precise/steam_latest.tar.gz"
-PROTON_GE="https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton9-5/GE-Proton9-5.tar.gz"
+STEAM_LAUNCHER="https://cdn.akamai.steamstatic.com/client/installer/steam.deb"
+PROTON_GE="https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton9-6/GE-Proton9-6.tar.gz"
+
+STEAM_INSTALL_DIR="/opt/steam"
 COMPATIBILITYTOOLS_DIR="$HOME/.local/share/Steam/compatibilitytools.d"
 
-# curl -Lo steam.tar.gz "$STEAM_LAUNCHER"
-# tar xvf steam.tar.gz
-# rm steam.tar.gz
-# cd steam-launcher
-# sudo make install
-# cd ..
-# rm -rf steam-launcher
+curl -Lo steam.deb "$STEAM_LAUNCHER"
+ar x steam.deb data.tar.xz
+mkdir -p "$STEAM_INSTALL_DIR"
+sudo tar xf data.tar.xz -C "$STEAM_INSTALL_DIR"
+rm steam.deb data.tar.xz
 
 curl -Lo protonge.tar.gz "$PROTON_GE"
 mkdir -p "$COMPATIBILITYTOOLS_DIR"
