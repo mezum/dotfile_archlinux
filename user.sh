@@ -9,6 +9,6 @@ install-sh() {
     done < <(find "$BASEDIR" -mindepth 2 -maxdepth 2 -name "$FILENAME")
 }
 
-#install-sh pre
-#install-sh
+install-sh pre
+install-sh
 install-sh post
