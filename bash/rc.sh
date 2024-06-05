@@ -11,6 +11,7 @@ alias grep='ls --color=auto'
 # node
 [[ -r "$NVM_DIR/nvm.sh" ]] && . "$NVM_DIR/nvm.sh"
 [[ -r "$NVM_DIR/bash_completion" ]] && . "$NVM_DIR/bash_completion"
+[[ -r "$NVM_DIR/install-nvm-exec.sh" ]] && "$NVM_DIR/install-nvm-exec.sh"
 
 # interface
 alias gui='startplasma-wayland'

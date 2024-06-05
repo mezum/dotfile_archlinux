@@ -1,5 +1,3 @@
 plasma-meta
-kde-graphics-meta
-kde-multimedia-meta
 kde-system-meta
 kde-utilities-meta
