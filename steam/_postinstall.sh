@@ -13,6 +13,9 @@ sudo mkdir -p "$STEAM_INSTALL_DIR"
 sudo tar xf data.tar.xz -C "$STEAM_INSTALL_DIR"
 rm steam.deb data.tar.xz
 
+sudo ln -sf /opt/steam/usr/bin/steam /usr/bin/steam
+sudo ln -sf /opt/steam/usr/bin/steamdeps /usr/bin/steamdeps
+
 curl -Lo protonge.tar.gz "$PROTON_GE"
 mkdir -p "$COMPATIBILITYTOOLS_DIR"
 tar xvf protonge.tar.gz -C "$COMPATIBILITYTOOLS_DIR/"
