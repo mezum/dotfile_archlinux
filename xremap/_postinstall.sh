@@ -9,3 +9,5 @@ mkdir -p \
 
 ln -sf "$BASEDIR/config.yaml" "$HOME/.config/xremap/"
 ln -sf "$BASEDIR/xremap.desktop" "$HOME/.config/autostart/"
+
+cargo install xremap
