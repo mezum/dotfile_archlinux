@@ -4,3 +4,5 @@ pipewire
 pipewire-audio
 pipewire-pulse
 pireplumber
+alsa-plugins
+lib32-alsa-plugins

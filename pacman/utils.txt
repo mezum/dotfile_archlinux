@@ -1,3 +1,4 @@
 firefox
 discord
 usbutils
+jq

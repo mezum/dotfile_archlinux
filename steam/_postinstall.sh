@@ -15,6 +15,7 @@ rm steam.deb data.tar.xz
 
 sudo ln -sf /opt/steam/usr/bin/steam /usr/bin/steam
 sudo ln -sf /opt/steam/usr/bin/steamdeps /usr/bin/steamdeps
+sudo ln -sf /opt/steam/usr/share/applications/steam.desktop /usr/share/applications/steam.desktop
 
 curl -Lo protonge.tar.gz "$PROTON_GE"
 mkdir -p "$COMPATIBILITYTOOLS_DIR"

@@ -2,5 +2,6 @@ dkms
 nvidia-dkms
 nvidia-libgl
 nvidia-utils
+nvidia-settings
 lib32-nvidia-libgl
 lib32-nvidia-utils
