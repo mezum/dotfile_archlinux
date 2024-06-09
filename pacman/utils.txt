@@ -1,4 +1,6 @@
 firefox
-discord
+discord_arch_electron
 usbutils
 jq
+wine-ge-custom
+bash-completion

@@ -2,3 +2,4 @@ obs-studio
 obs-vaapi
 v4l2loopback-dkms
 xwaylandvideobridge
+gstreamer

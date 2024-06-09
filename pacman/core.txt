@@ -1,7 +1,9 @@
+less
 sudo
 pkgconf
 xterm
 git
+git-lfs
 make
 emacs
 vim

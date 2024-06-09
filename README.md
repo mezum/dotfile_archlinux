@@ -72,6 +72,13 @@ sudo localectl set-locale LANG=en_US.UTF-8
 # /etc/pacman.conf
 [multilib]
 Include = /etc/pacman.d/mirrorlist
+
+## ked-unstable
+```bash
+# /etc/pacman.conf
+# note: insert before core-testing
+[kde-unstable]
+Include = /etc/pacman.d/mirrorlist
 ```
 
 ## yay
@@ -89,4 +96,9 @@ MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)
 # remove kms from HOOKS
 
 sudo mkinitcpio -P
+```
+
+## Re-enable display on kscreen
+```bash
+kscreen-doctor output.DP-2.enable
 ```
