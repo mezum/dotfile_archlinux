@@ -7,15 +7,15 @@ PROTON_GE="https://github.com/GloriousEggroll/proton-ge-custom/releases/download
 STEAM_INSTALL_DIR="/opt/steam"
 COMPATIBILITYTOOLS_DIR="$HOME/.local/share/Steam/compatibilitytools.d"
 
-curl -Lo steam.deb "$STEAM_LAUNCHER"
-ar x steam.deb data.tar.xz
-sudo mkdir -p "$STEAM_INSTALL_DIR"
-sudo tar xf data.tar.xz -C "$STEAM_INSTALL_DIR"
-rm steam.deb data.tar.xz
+# curl -Lo steam.deb "$STEAM_LAUNCHER"
+# ar x steam.deb data.tar.xz
+# sudo mkdir -p "$STEAM_INSTALL_DIR"
+# sudo tar xf data.tar.xz -C "$STEAM_INSTALL_DIR"
+# rm steam.deb data.tar.xz
 
-sudo ln -sf /opt/steam/usr/bin/steam /usr/bin/steam
-sudo ln -sf /opt/steam/usr/bin/steamdeps /usr/bin/steamdeps
-sudo ln -sf /opt/steam/usr/share/applications/steam.desktop /usr/share/applications/steam.desktop
+# sudo ln -sf /opt/steam/usr/bin/steam /usr/bin/steam
+# sudo ln -sf /opt/steam/usr/bin/steamdeps /usr/bin/steamdeps
+# sudo ln -sf /opt/steam/usr/share/applications/steam.desktop /usr/share/applications/steam.desktop
 
 curl -Lo protonge.tar.gz "$PROTON_GE"
 mkdir -p "$COMPATIBILITYTOOLS_DIR"

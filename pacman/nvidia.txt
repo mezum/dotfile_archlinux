@@ -3,5 +3,12 @@ nvidia-dkms
 nvidia-libgl
 nvidia-utils
 nvidia-settings
+vulkan-icd-loader
+libdrm
+libva-utils
+libva-nvidia-driver
 lib32-nvidia-libgl
 lib32-nvidia-utils
+lib32-libvdpau
+lib32-libdrm
+lib32-vulkan-icd-loader

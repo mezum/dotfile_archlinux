@@ -6,7 +6,7 @@ SRCDIR="$(cd "$(dirname "$(readlink "${BASH_SOURCE:-$0}")")"; pwd)"
 
 # coloring
 alias ls='ls --color=auto'
-alias grep='ls --color=auto'
+alias grep='grep --color=auto'
 
 # node
 [[ -r "$NVM_DIR/nvm.sh" ]] && . "$NVM_DIR/nvm.sh"
