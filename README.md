@@ -63,7 +63,7 @@ en_US.UTF-8 UTF-8
 ja_JP.UTF-8 UTF-8
 
 sudo locale-gen
-sudo localectl set-locale LANG=en_US.UTF-8
+sudo echo LANG=en_US.UTF-8 > /etc/locale.conf
 ```
 
 ## multilib
