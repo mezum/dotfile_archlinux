@@ -1,6 +1,10 @@
 firefox
 discord_arch_electron
 usbutils
+bluez
+bluez-utils
 jq
-wine-ge-custom
+wine-ge-custom-bin
 bash-completion
+kitty
+eog

@@ -2,4 +2,3 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 ttf-hackgen
-ttf-ume

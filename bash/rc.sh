@@ -14,5 +14,5 @@ alias grep='grep --color=auto'
 [[ -r "$NVM_DIR/install-nvm-exec.sh" ]] && "$NVM_DIR/install-nvm-exec.sh"
 
 # interface
-alias gui='startplasma-wayland'
+alias gui='/usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland'
 PS1='[\u@\h \W]\$ '

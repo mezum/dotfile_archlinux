@@ -4,6 +4,7 @@ shared:
     - emacs
     - vim
     - code
+    - code-url-handler
   hhkb: &hhkb
     - PFU Limited HHKB-Hybrid
     - HHKB-Hybrid_1 Keyboard
@@ -24,7 +25,6 @@ modmap:
       not: *terminals
     remap:
       Ctrl_L: CapsLock
-
 
 virtual_modifiers:
   - CapsLock

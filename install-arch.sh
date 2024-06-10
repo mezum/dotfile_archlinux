@@ -16,11 +16,17 @@ pacstrap -K /mnt \
     linux-firmware \
     intel-ucode \
     refind \
+    pkgconf \
+    make \
     git \
+    git-lfs \
+    less \
+    xterm \
     vim \
     sudo \
     fakeroot \
-    debugedit
+    debugedit \
+    dkms
 genfstab -U /mnt > /mnt/etc/fstab
 echo EDITOR=vim > /mnt/etc/environment
 echo LANG=en_US.UTF-8 > /mnt/etc/locale.conf

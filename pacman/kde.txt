@@ -2,3 +2,4 @@ plasma-meta
 kde-system-meta
 kde-utilities-meta
 xdg-utils
+xdg-launch

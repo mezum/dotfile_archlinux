@@ -1,7 +1,9 @@
 less
 sudo
 pkgconf
+cmake
 xterm
+xfsprogs
 git
 git-lfs
 make

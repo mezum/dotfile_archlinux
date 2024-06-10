@@ -90,15 +90,20 @@ makepkg -si
 ```
 
 ## mkinitcpio
+
 ```bash
+echo "options nvidia NVreg_PreserveVideoMemoryAllocations=1 NVreg_TemporaryFilePath=/var/tmp" | sudo cat /etc/modprobe.d/nvidia.conf
+
 # /etc/mkinitcpio.conf
 MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)
+FILES=(/etc/modprobe.d/nvidia.conf)
 # remove kms from HOOKS
 
 sudo mkinitcpio -P
 ```
 
 ## Re-enable display on kscreen
+
 ```bash
 kscreen-doctor output.DP-2.enable
 ```

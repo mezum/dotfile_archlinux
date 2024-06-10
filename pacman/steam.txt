@@ -1,5 +1,7 @@
 steam-native-runtime
 lib32-systemd
 networkmanager
+openssl-1.0
+lib32-openssl-1.0
 ttf-liberation
 dhcpcd
