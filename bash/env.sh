@@ -12,11 +12,11 @@ export GBM_BACKEND="nvidia-drm"
 export __GLX_VENDOR_LIBRARY_NAME="nvidia"
 
 # Wayland
-GDK_BACKEND="wayland"
-QT_QPA_PLATFORM="wayland;xcb"
-SDL_VIDEODRIVER="wayland,x11"
-XDG_SESSION_TYPE="wayland"
-ELECTRON_OZONE_PLATFORM_HINT="auto"
+export GDK_BACKEND="wayland"
+# export QT_QPA_PLATFORM="wayland;xcb"
+export SDL_VIDEODRIVER="wayland,x11"
+export XDG_SESSION_TYPE="wayland"
+export ELECTRON_OZONE_PLATFORM_HINT="auto"
 
 # VA-API
 export NVD_BACKEND="direct"
