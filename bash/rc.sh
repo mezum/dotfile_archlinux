@@ -15,4 +15,6 @@ alias grep='grep --color=auto'
 
 # interface
 alias gui='/usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland'
+alias restart-gui='kquitapp6 plasmashell || killall plasmashell && kstart plasmashell'
+alias restart-network='sudo systemctl restart systemd-networkd.service'
 PS1='[\u@\h \W]\$ '
