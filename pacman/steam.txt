@@ -5,3 +5,8 @@ openssl-1.0
 lib32-openssl-1.0
 ttf-liberation
 dhcpcd
+
+ovras
+fuse2
+qt5-wayland
+qt5-quickcontrols2

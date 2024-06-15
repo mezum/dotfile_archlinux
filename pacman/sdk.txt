@@ -1,4 +1,6 @@
-dotnet-sdk
+base-devel
+clang
+gcc
 nvm
 python
 rustup
