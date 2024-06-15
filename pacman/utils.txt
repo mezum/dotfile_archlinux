@@ -4,6 +4,7 @@ usbutils
 bluez
 bluez-utils
 jq
+winetricks
 wine-ge-custom-bin
 bash-completion
 kitty
