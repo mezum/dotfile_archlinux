@@ -6,3 +6,4 @@ pipewire-pulse
 pireplumber
 alsa-plugins
 lib32-alsa-plugins
+opencv

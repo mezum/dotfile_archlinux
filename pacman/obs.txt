@@ -1,5 +1,8 @@
 obs-studio
 obs-vaapi
+obs-shaderfilter-git
+obs-advanced-scene-switcher
+obs-ndi-bin
 v4l2loopback-dkms
 xwaylandvideobridge
 gstreamer
