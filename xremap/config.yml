@@ -12,6 +12,8 @@ shared:
     - HHKB-Hybrid_3 Keyboard
     - HHKB-Hybrid_4 Keyboard
 
+keypress_delay_ms: 1
+
 modmap:
   - device:
       only: *hhkb
@@ -73,5 +75,6 @@ keymap:
           C-c: Ctrl-q
           u: [Ctrl-z, { set_mark: false }]
   - name: underscore
+    exact_match: true
     remap:
       ro: Shift-ro
