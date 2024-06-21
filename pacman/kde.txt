@@ -3,3 +3,8 @@ kde-system-meta
 kde-utilities-meta
 xdg-utils
 xdg-launch
+xdg-desktop-portal-kde
+xclip
+clipboard-sync
+wl-clipboard
+appmenu-gtk-module
