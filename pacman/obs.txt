@@ -1,6 +1,7 @@
 obs-studio
 obs-vaapi
 obs-shaderfilter-git
+obs-pipewire-audio-capture-bin
 obs-ndi-bin
 v4l2loopback-dkms
 xwaylandvideobridge
