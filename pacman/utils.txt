@@ -9,3 +9,7 @@ wine-ge-custom-bin
 bash-completion
 kitty
 eog
+remmina
+libvncserver
+spice-gtk
+freerdp
